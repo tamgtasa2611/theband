@@ -1,0 +1,570 @@
+/* reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/*
+1. Tu ngoai vao trong
+2. Tu tren xuong duoi
+3. Tong quan den chi tiet
+*/
+
+/*
+1. Vi tri
+2. Kich thuoc
+3. Mau sac
+4. Kieu chu
+*/
+
+
+.text-white {
+    color: #fff !important;
+}
+
+.clear {
+    clear:both;
+}
+
+.col {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+#header {
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+/* thanh mau den */
+}
+
+#nav {
+    display: inline-block;
+}
+#nav > li {
+    display: inline-block;
+    /* menu hang ngang */
+}
+
+#nav li {
+    position: relative;
+    /* co dinh menu hang ngang */
+}
+
+#nav .subnav {
+    display: none;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    /* khoi hien len khi hover */
+}
+
+#nav li:hover .subnav {
+    display: block;
+    /* dinh dang khoi hien len khi hover vao MORE */
+}
+
+#nav li a {
+    color: white;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 28px;
+    /* chu hang ngang */
+    
+}
+
+#nav > li > a {
+    text-transform: uppercase;
+    /* viet hoa chu hang ngang */
+}
+
+#nav > li:hover > a {
+    display: block;
+    color:  black;
+    background-color: #ccc;
+    /* hover cua MORE */
+}
+
+#nav  .subnav > li:hover > a {
+    display: block;
+    color: black;
+    background-color: #ccc;
+    /* hover tung chu trong subnav */
+}
+
+#nav, .subnav {
+    list-style-type: none;
+    /* bo ki tu truoc list */
+}
+
+#nav .subnav li a {
+    line-height: 40px;
+    color: black;
+    padding: 0 16px;
+    /* chieu cao chu trong subnav */
+}
+
+#nav .nav-arrow-down {
+    font-size: 12px;
+    /* chinh font cho nut mui ten MORE */
+}
+
+#header .mb-menu-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+    display: none;
+}
+
+#header .search-button {
+    float: right;
+    /* chuyen search icon sang ben phai */
+    
+}
+
+#header .search-button:hover {
+    background-color: rgb(226, 48, 48);
+    /* hover search icon */
+    cursor: pointer;
+    /* con tro chuot khi di vao search icon */
+}
+
+#header .mb-menu-button:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+#header .mb-menu-icon:hover {
+    color: black;
+}
+
+#header .mb-menu-icon,
+#header .search-icon {
+    color: white;
+    font-size: 14px;
+    line-height: 46px;
+    padding: 16px 24px;
+    /* thuoc tinh search icon */
+}
+
+#slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    position: relative;
+    background: 
+    url('../img/slider1.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 48px;
+    color: white;
+    /* cach 1 
+    left: 50%; 
+    transform:translateX(-50%); */
+    /* cach 2 */
+    right: 0;
+    left: 0;
+    /* cach 3 */
+    width: 100%;
+    text-shadow: 0 0 1px black;
+    text-align: center;
+}
+#slider .text-heading {
+    font-weight: 500px;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+#slider .text-des {
+    font-size: 15px;
+}
+
+#content .content-section {
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px;
+    overflow-x: hidden;
+}
+
+#content .section-heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+#content .section-slogan {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text {
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+
+ #content .member-list {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center; 
+    margin-top: 48px;
+    margin-bottom: 32px;
+} 
+
+#content .member-item {
+    margin-left: 28px;
+    margin-right: 28px;
+}
+
+
+
+#content .member-item .member-name {
+    font-size: 15px;
+}
+
+#content .member-item img {
+    margin-top: 15px;
+    width: 160px;
+    border-radius: 4px;
+}
+
+.tour-section {
+    background-color: #000;
+}
+
+.ticket-list {
+    background-color: #fff;
+    margin: 40px -40px 0px;
+}
+
+.ticket-list li {
+    list-style-type: none;
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ticket-list .sold-out {
+    background-color: #f44336;
+    color: white;
+    padding: 3px 4px;
+    margin-left: 16px;
+} 
+
+.ticket-list .quantity {
+    float: right;
+    background-color: #000;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -2px;
+}
+
+/* place */
+.place-list {
+    display: flex;
+    margin: 32px -48px 32px;
+}
+
+.place-item {
+    padding: 0 8px;
+    
+}
+
+.place-body {
+    background-color: white;
+    line-height: 24px;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-img {
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-body h3 {
+    font-weight: 600;
+}
+
+.place-time{
+    margin-top: 15px;
+    opacity: 0.6;
+}
+
+.place-desc {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.place-buy-button {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.place-buy-button:hover {
+    background: #ccc;
+    color: black;
+}
+
+.modal.open{
+    display: flex;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal-container {
+    background-color: white;
+    width: 900px;
+    max-width: calc(100% - 40px);
+    min-height: 200px;
+    position: relative;
+    animation: modalPopUp ease .5s;
+}
+
+header.modal-header {
+    background-color: rgba(35, 161, 85, 0.962) ;
+    height: 129px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    opacity: 0.9;
+    color: black;
+    background-color: rgba(35, 161, 85, 0.962);
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+.modal-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.modal-input {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+#buy-ticket {
+    background-color: rgba(35, 161, 85, 0.962);
+    border: none;
+    width: 100%;
+    font-size: 15px;
+    color: white;
+    padding: 16px;
+    cursor: pointer;
+}
+
+#buy-ticket:hover {
+    color: black;
+    opacity: 0.9;
+}
+
+.modal-footer {
+    padding: 0px 16px 16px 16px;
+    text-align: right;
+}
+
+.modal-footer a {
+    color: rgb(24, 173, 223);
+}
+
+@keyframes modalPopUp {
+    from {
+        opacity: 0.5;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-main {
+   /* margin-left: -64px;
+   width: 800px; */
+   padding: 32px 0px;
+   display: flex;
+}
+
+ .contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+    width: 50%;
+}
+
+.contact-info a {
+    color: #101aef ;
+    opacity: 0.7;
+}
+
+.contact-info a:hover {
+    opacity: 1;
+}
+
+
+.contact-info i {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-input {
+    font-size: 15px;
+    width: 50%;
+}
+
+.contact-input1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-input1 input {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+
+
+.contact-input2 input {
+    padding: 10px;
+    margin: 8px 0px 0px 0px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.contact-button button {
+    float: right;
+    color: white;
+    background-color: #000;
+    padding: 8px 16px;
+    margin: 16px 0px;
+    border: none;
+}
+
+.contact-button button:hover {
+    color: black;
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+#map {
+    margin: 0;
+    padding: 0;
+}
+
+#map img {
+    width: 100%;
+}
+
+#footer {
+    padding: 64px 16px 68px;
+    text-align: center;
+}
+
+.social {
+    font-size: 24px;
+}
+
+.social a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+}
+
+.social a:hover {
+    opacity: 0.6;
+}
+
+#footer p {
+    color: rgba(0,0,0,0.6);
+    margin-top: 32px;
+}
+
+#footer a {
+    color: rgba(0,0,0,0.6);
+}
+
+#footer a:hover {
+    opacity: 0.6;
+}
+
+
+
+

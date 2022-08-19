@@ -1,0 +1,158 @@
+/* PC */
+@media (min-width: 64.0625em) {
+
+}
+
+/* Tablet & Mobile */
+@media (max-width: 64em) {
+    .btn {
+        padding: 12px 20px;
+    }
+
+    .contact-input2 input,
+    .contact-input1 input {
+        padding: 16px;
+    }
+
+    .contact-button button {
+        padding: 12px 20px;
+    }
+
+    .social a {
+        margin: 0 16px;
+    }
+
+    .copyright a {
+        padding: 16px 0px;
+        display: inline-block;
+    }
+
+}
+
+/* Tablet */
+@media (max-width: 64em) and (min-width: 46.3125em) {
+    .contact-info {
+        line-height: 2;
+    }
+
+    .social {
+        font-size: 40px;
+    }
+
+    
+    .copyright {
+        font-size: 20px;
+    }
+}   
+
+/* Mobile */
+@media (max-width: 46.25em) {
+    
+    /* bengin Nav */
+    #header {
+        overflow: hidden;
+    }
+    
+    #nav {
+        display: block;
+    }
+
+    #nav > li {
+        display: block;
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    #nav li a {
+        width: 100%;
+    }
+
+    #nav .subnav {
+        position: initial;
+        background-color: #333;
+        padding: 10px 28px;
+    }
+
+    #nav .subnav li a {
+        color: white;
+    }
+
+    #header .search-button {
+        display: none;
+    }
+
+    #header .mb-menu-button {
+        display: block;
+    }
+
+    /* end Nav */
+
+    /* begin Slider */
+    #slider .text-content {
+        display: none;
+    }
+    /* end Slider */
+
+    /* begin member list */
+    #content .member-list {
+        display: block;
+    }
+
+    #content .member-name {
+        margin-top: 20px;
+    }
+
+    #content .member-item img {
+        width: 90%;
+    }
+    /* end member list */
+
+    /* begin Tour */
+    .place-list {
+        display: block;
+    }
+
+    .place-item {
+        margin-bottom: 16px;
+    }
+
+    .place-buy-button {
+        width: 100%;
+        text-align: center;
+        padding: 12px 20px;
+    }
+    /* end Tour */
+
+    /* begin Contact */
+    .contact-main {
+        display: block;
+    }
+
+    .contact-info {
+        width: 100%;
+        line-height: 2;
+        margin-bottom: 16px;
+    }
+
+    .contact-input {
+        width: 100%;
+    }
+
+    .contact-input1 {
+        display: block;
+    }
+
+    .contact-input1 input {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .contact-button button {
+        width: 100%;
+        padding: 12px 20px;
+    }
+    /* end Contact */
+    
+}
