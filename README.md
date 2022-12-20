@@ -1,2 +1,2 @@
 # theband
-im just started learning how to develop a website.
+I'm a student who just started to learn coding
